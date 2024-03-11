@@ -1,44 +1,87 @@
 <!-- use lower case for file name (for naming conventions)
     we are using {  HTML5  }  -->
 
-    <!DOCTYPE html>
-    <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Ron Bonnke ">
-        <meta name="description" content="learning how to create a html website.">
-        <title>My First Web page</title>
-        <link rel="icon" href="ron.jpeg" type="image/icon">
-        <link rel="stylesheet" href="./main.css" type="text/css">
-    </head>
-    
-      <body>
-        <h1>Hello World!</h1>
-    
-        <hr>
-    
-        <h2>I'm ready to learn html</h2>
-        <p>This is my first webpage.</p>
-    
-        <h3>My daily schedule</h3>
-        <p>Let me tel you how I...
-            <br>...I learn more about web dev.
-            <br>...I plan out my schedule.
-            <br>...I use resources from MDN(mozilla development network).
-        </p>
-    
-        <hr>
-    
-        <h2>I'm planning some places</h2>
-        <p>I'm really working hard and <em> really need a getaway </em></p>
-    
-    
-        <h3>Place I wanna go</h3>
-        <p>I've heard good things about the beach.</p>
-    
-        <h3>Place I wanna avoid</h3>
-        <p>Cold places. <strong>Noo way!</strong></p>
-    
-      </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ron Bonnke " />
+    <meta name="description" content="learning how to create a html website." />
+    <title>My First Web page</title>
+    <!-- to add pictures aor images import them inside or drag and drop in this code editor directly or add image addresses from browser directly -->
+    <link
+      rel="icon"
+      href="https://camo.githubusercontent.com/998ddb1ac0607ccc0fa74c5d2747146f63e6443ab183c0fa93caa362844598ce/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f34382f3030303030302f68746d6c2d352d2d76312e706e67"
+      type="image/icon"
+    />
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Hello World!</h1>
+
+    <hr />
+    <nav>
+      <ul>
+        <li>
+          <a href="#html">learning html</a>
+        </li>
+        <li><a href="#vacation">my trip plans</a></li>
+      </ul>
+    </nav>
+    <hr />
+
+    <section id="html">
+      <h2>I'm ready to learn html</h2>
+      <p>This is my first webpage.</p>
+
+      <h3>My daily schedule</h3>
+      <p>Let me tell you how I...</p>
+      <ol>
+        <!-- &nbsp; provides us spaces-->
+        <li>&nbsp;&nbsp;&nbsp; ...I learn more about web dev.</li>
+        <li>...I plan out my schedule. <br /></li>
+        <li>
+          ...I use resources from
+          <abbr title="mozilla developer network"
+            ><a href="https://developer.mozilla.org">MDN</a></abbr
+          >
+        </li>
+      </ol>
+    </section>
+    <hr />
+
+    <section id="vacation">
+      <h2>I'm planning a vacation</h2>
+      <p>I'm really working hard and <em> really need a getaway </em></p>
+
+      <h3>Place I wanna go</h3>
+      <ul>
+        <li><p>I've heard good things about the beach.</p></li>
+        <li>
+          <p>I've heard good things about going here:</p>
+          <address>
+            #09, Chikka Gubbi,St. Antony's church road <br />
+            near Gov't school, bangalore - 56077
+          </address>
+        </li>
+      </ul>
+
+      <h3>Place I wanna avoid</h3>
+      <dl>
+        <dt>north pole</dt>
+        <dd>I hear this <strong>COLD !!</strong></dd>
+
+        <dt>South pole</dt>
+        <dd>This is also cold.</dd>
+
+        <dt>Mountain tops</dt>
+        <dd>Also very cold</dd>
+      </dl>
+    </section>
+
+    <hr />
+    &lt;&lt; &copy; <a href="about.html">ronbonnke</a> &gt;&gt;
+    <p><a href="#">back to top</a></p>
+  </body>
+</html>

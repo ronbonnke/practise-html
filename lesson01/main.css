@@ -5,3 +5,19 @@ body {
   background-color: #333;
   color: whitesmoke;
 }
+a {
+  color: rgb(156, 202, 243);
+}
+
+a:visited {
+  color: rgb(97, 97, 240);
+}
+
+/* you can use both active or hover to check the color after clicking or hover to see it */
+
+a:active {
+  color: skyblue;
+}
+a:hover {
+  color: aquamarine;
+}
