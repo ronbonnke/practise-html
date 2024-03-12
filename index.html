@@ -36,33 +36,49 @@
       <article id="html">
         <h2>I'm ready to learn html</h2>
         <p>This is my first webpage.</p>
-        <img
-          src="images/download html.png"
-          alt="image"
-          title="I am learning html5"
-          width="300"
-          height="150"
-        />
-        <figure>
-          <figcaption>An Example of Html code</figcaption>
-          <p>
-            <code> &lt;h1&gt; Hello World! &lt;/h1&gt;</code>
-          </p>
-        </figure>
+        <section>
+          <img
+            src="images/download html.png"
+            alt="image"
+            title="I am learning html5"
+            width="300"
+            height="150"
+          />
+          <figure>
+            <figcaption>An Example of Html code</figcaption>
+            <p>
+              <code> &lt;h1&gt; Hello World! &lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
 
-        <h3>My daily schedule</h3>
-        <p>Let me tell you how I...</p>
-        <ol>
-          <!-- &nbsp; provides us spaces-->
-          <li>&nbsp;&nbsp;&nbsp; ...I learn more about web dev.</li>
-          <li>...I plan out my schedule. <br /></li>
-          <li>
-            ...I use resources from
-            <abbr title="mozilla developer network"
-              ><a href="https://developer.mozilla.org">MDN</a></abbr
-            >
-          </li>
-        </ol>
+        <section>
+          <h3>My daily schedule</h3>
+          <p>Let me tell you how I...</p>
+          <ol>
+            <!-- &nbsp; provides us spaces-->
+            <li>&nbsp;&nbsp;&nbsp; ...I learn more about web dev.</li>
+            <li>...I plan out my schedule. <br /></li>
+            <li>
+              ...I use resources from
+              <abbr title="mozilla developer network"
+                ><a href="https://developer.mozilla.org">MDN</a></abbr
+              >
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the
+                <mark>number of hours</mark> I code
+              </summary>
+              <p>
+                I start at <time datetime="09:00">9</time> and I do this for
+                <time datetime="PT3H">3 hours</time>
+              </p>
+            </details>
+          </aside>
+        </section>
       </article>
 
       <hr />
@@ -71,53 +87,58 @@
         <h2>I'm planning a vacation</h2>
         <p>I'm really working hard and <em> really need a getaway </em></p>
 
-        <h3>Places I wanna go</h3>
-        <ul>
-          <li>
-            <p>I've heard good things about the beach.</p>
-            <figure>
-              <img
-                src="images/st martin.jpeg"
-                alt="image"
-                title="I want to visit a caribbean beach"
-                width="400px"
-                height="225px"
-                loading="lazy"
-              />
-              <figcaption>This is a caribbean beach getaway</figcaption>
-            </figure>
-          </li>
-          <li>
-            <p>I've heard good things about going here:</p>
-            <address>
-              #09, Chikka Gubbi,St. Antony's church road <br />
-              near Gov't school, bangalore - 56077
-            </address>
-            <figure>
-              <img
-                src="images/960x0.webp"
-                alt="cancun Vacation"
-                title="It's 12 o' clock Somewhere!"
-                loading="lazy"
-                width="360"
-                height="250"
-              />
-              <figcaption>A Caribbean vacation image</figcaption>
-            </figure>
-          </li>
-        </ul>
+        <section>
+          <h3>Places I wanna go</h3>
+          <ul>
+            <li>
+              <p>I've heard good things about the beach.</p>
+              <figure>
+                <img
+                  src="images/st martin.jpeg"
+                  alt="image"
+                  title="I want to visit a caribbean beach"
+                  width="400px"
+                  height="225px"
+                  loading="lazy"
+                />
+                <figcaption>This is a caribbean beach getaway</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                #09, Chikka Gubbi,St. Antony's church road <br />
+                near Gov't school, bangalore - 56077
+              </address>
+              <figure>
+                <img
+                  src="images/960x0.webp"
+                  alt="cancun Vacation"
+                  title="It's 12 o' clock Somewhere!"
+                  loading="lazy"
+                  width="360"
+                  height="250"
+                />
+                <figcaption>A Caribbean vacation image</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!-- TODO: Add more places -->
 
-        <h3>Place I wanna avoid</h3>
-        <dl>
-          <dt>north pole</dt>
-          <dd>I hear this <strong>COLD !!</strong></dd>
+        <section>
+          <h3>Place I wanna avoid</h3>
+          <dl>
+            <dt>north pole</dt>
+            <dd>I hear this <strong>COLD !!</strong></dd>
 
-          <dt>South pole</dt>
-          <dd>This is also cold.</dd>
+            <dt>South pole</dt>
+            <dd>This is also cold.</dd>
 
-          <dt>Mountain tops</dt>
-          <dd>Also very cold</dd>
-        </dl>
+            <dt>Mountain tops</dt>
+            <dd>Also very cold</dd>
+          </dl>
+        </section>
       </article>
     </main>
 
