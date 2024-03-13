@@ -28,3 +28,10 @@ a:hover {
 img:hover {
   filter: grayscale(0%);
 } */
+
+table, tr,  th, td, caption{
+  border-collapse: collapse;
+  padding: 5px;
+  border: 1px solid #eee;
+  font-family: 'Courier New', Courier, monospace';
+}

@@ -52,7 +52,7 @@
           </figure>
         </section>
 
-        <section>
+        <>
           <h3>My daily schedule</h3>
           <p>Let me tell you how I...</p>
           <ol>
@@ -78,6 +78,62 @@
               </p>
             </details>
           </aside>
+          <br />
+          <table>
+            <caption>
+              My daily schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th id="morning" scope="row">MORNING</th>
+                <td headers="time and morning">
+                  <time datetime="08:00">8am </time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>write code</td>
+              </tr>
+              <tr>
+                <th scope="row">BREAK</th>
+                <td>
+                  <time datetime="12:00">12pm </time>-<time datetime="2:00"
+                    >2pm</time
+                  >
+                </td>
+                <td>lunch time</td>
+              </tr>
+              <tr>
+                <th scope="row">AFTERNOON</th>
+              <td>
+                  <time datetime="02:00">2pm </time>-<time datetime="5:00"
+                    >5pm</time
+                  >
+                </td>
+                <td>study other courses</td>
+              </tr>
+              <tr>
+                <td rowspan="2">All other times</td>
+                <th scope="row">EVENING</th>
+                <td>Free time</td>
+              </tr>
+              <tr>
+                <th scope="row">NIGHT</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3 ">that's what I do everyday, Just eat, Sleep and code</td>
+            </tr>
+          </tfoot>
+        </table>
         </section>
       </article>
 
