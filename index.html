@@ -210,7 +210,25 @@
           <input type="text" name="firstName" id="lastName" placeholder="Ron" autocomplete="on" required></p>
           <p>
           <label for="password">Password : </label>
-          <input type="text" name="firstName" id="password" placeholder="password" required></p>
+          <input type="password" name="password" id="password" placeholder="password" required></p>
+          <p>
+          <label for="phone">Phone : </label>
+          <input type="tel" name="phone" id="phone" placeholder="999 9999 999" pattern="[0-9]{3}[0-9]{4}[0-9]{3}" required></p>
+          <p>
+          <label for="decade">Favorite decade : </label>
+          <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980"></p>
+          <p>
+            <label for="coffee">Favorite coffee</label>
+            <select name="coffee" id="coffee">
+              <option value="regular coffee">regular coffee</option>
+              <option value="ice coffee">Iced coffee</option>
+              <option value="latte">Latte</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="cortado">Cortado</option>
+              <option value="americano">Americano</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
         </form>
       </article>
     </main>
