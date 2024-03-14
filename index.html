@@ -201,7 +201,8 @@
         <h2>Contact me</h2>
         <p>I'd really like to hear from you!</p>
         <form action="https://httpbin/get" method="get">
-
+          <fieldset>
+            <legend>Personal Info</legend>
           <p>
           <label for="firstName">First Name : </label>
           <input type="text" name="firstName" id="firstName" placeholder="Enter your name here" autocomplete="on" required autofocus></p>
@@ -217,18 +218,82 @@
           <p>
           <label for="decade">Favorite decade : </label>
           <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980"></p>
-          <p>
-            <label for="coffee">Favorite coffee</label>
-            <select name="coffee" id="coffee">
+           <p>
+            <label for="coffee">Favorite coffee : </label>
+            <select name="coffee" id="coffee" multiple size="5">
+              <optgroup label="Coffees">
               <option value="regular coffee">regular coffee</option>
               <option value="ice coffee">Iced coffee</option>
-              <option value="latte">Latte</option>
+            </optgroup>
+            <optgroup label="esspresso drinks">
+              <option value="latte" selected>Latte</option>
               <option value="cappuccino">Cappuccino</option>
               <option value="cortado">Cortado</option>
               <option value="americano">Americano</option>
+            </optgroup>
               <option value="other">Other</option>
             </select>
+          </p> 
+
+          <!-- <p>
+            <label for="coffee">Favorite coffee : </label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+            <datalist id="coffee-list">
+              <option value="Regular Coffee">
+              <option value="latte">
+              <option value="espresso">
+                <option value="cortado">
+                  <option value="americano">
+                  <option value="other">
+
+              </datalist>
+          </p> -->
+
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>What is your favorite food</legend>
+          <p>
+            <input type="radio" name="food" id="tacos" value="tacos">
+            <label for="tacos">Tacos</label>
           </p>
+          <p>
+            <input type="radio" name="food" id="pizza" value="pizza">
+            <label for="pizza">pizza</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="other" value="other">
+            <label for="other">other</label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Do you have pets?</legend>
+          <p>
+            <input type="checkbox" name="pets" id="dog" value="dog">
+            <label for="dog">Dog</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="cat" value="cat">
+            <label for="dog">Cat</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="fish" value="fish">
+            <label for="fish">Fish</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="other" value="other">
+            <label for="other">Other</label>
+          </p>
+         
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Send me a note</legend>
+          <label for="message">Your Message :</label>
+          <br>
+          <textarea id="message" name="message" cols="50" rows="15" placeholder="type your message here!"></textarea>
+        </fieldset>
         </form>
       </article>
     </main>
